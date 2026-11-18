@@ -1,0 +1,103 @@
+/* Basic page setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #222222;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0 0 20px;
+    letter-spacing: 1px;
+}
+
+.intro {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Flexbox Gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+
+/* Individual gallery items */
+
+.gallery-item {
+    flex: 1 1 calc(50% - 25px);
+    margin: 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+
+/* Images */
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Captions */
+
+figcaption {
+    padding-top: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+figcaption strong {
+    color: #222222;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .gallery {
+        padding: 20px 15px 40px;
+        gap: 20px;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+
+}
